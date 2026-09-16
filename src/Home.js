@@ -7,7 +7,10 @@ import image2 from './images/image1.jpeg';
 import image3 from './images/image2.JPG';
 import eventFaisal from './images/event-faisal-mushtaq.png';
 import eventPanel from './images/event-speaker-panel.png';
-import eventPanelRecap from './images/event-speaker-panel-recap.png';
+import eventGameNight from './images/event-game-night.png';
+import eventBeyondPhysicalBoundaries from './images/event-beyond-physical-boundaries.png';
+import eventDarkAi from './images/event-dark-ai.png';
+import eventJeopardy from './images/event-jeopardy.png';
 
 const PAST_EVENTS = [
   {
@@ -21,9 +24,24 @@ const PAST_EVENTS = [
     image: eventPanel
   },
   {
-    title: 'Speaker Panel Recap',
-    date: 'April 23, 2026',
-    image: eventPanelRecap
+    title: 'MTC Game Night',
+    date: 'Thursday, April 2 · Price Center ERC Room',
+    image: eventGameNight
+  },
+  {
+    title: 'Beyond Physical Boundaries with Psyonic',
+    date: 'Thursday, January 22 · Eleanor Roosevelt College Room',
+    image: eventBeyondPhysicalBoundaries
+  },
+  {
+    title: 'MTC Dark AI',
+    date: 'November 21, 2025',
+    image: eventDarkAi
+  },
+  {
+    title: 'MTC Jeopardy',
+    date: 'January 8, 2026',
+    image: eventJeopardy
   }
 ];
 
