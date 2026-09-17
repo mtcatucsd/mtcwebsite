@@ -10,16 +10,6 @@
   --gradient-dark: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
 }
 
-/* Base Styles */
-body {
-  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--primary-dark);
-  color: var(--text-light);
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -29,72 +19,13 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: calc(100vh - 76px);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   padding: 4rem 0;
   text-align: center;
-}
-
-.hero-aurora {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.aurora-blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(90px);
-  opacity: 0.35;
-  will-change: transform;
-}
-
-.aurora-blob-1 {
-  top: -10%;
-  left: 8%;
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, var(--accent-gold) 0%, rgba(250, 204, 21, 0) 70%);
-  animation: aurora-drift-1 22s ease-in-out infinite;
-}
-
-.aurora-blob-2 {
-  bottom: -15%;
-  right: 6%;
-  width: 520px;
-  height: 520px;
-  background: radial-gradient(circle, var(--primary-blue) 0%, rgba(30, 58, 138, 0) 70%);
-  animation: aurora-drift-2 26s ease-in-out infinite;
-}
-
-.aurora-blob-3 {
-  top: 30%;
-  left: 45%;
-  width: 380px;
-  height: 380px;
-  background: radial-gradient(circle, #ffffff 0%, rgba(255, 255, 255, 0) 70%);
-  opacity: 0.06;
-  animation: aurora-drift-3 30s ease-in-out infinite;
-}
-
-@keyframes aurora-drift-1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(6%, 8%) scale(1.1); }
-}
-
-@keyframes aurora-drift-2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-8%, -6%) scale(1.08); }
-}
-
-@keyframes aurora-drift-3 {
-  0%, 100% { transform: translate(-50%, 0) scale(1); }
-  50% { transform: translate(-50%, 10%) scale(1.15); }
 }
 
 .hero-content {

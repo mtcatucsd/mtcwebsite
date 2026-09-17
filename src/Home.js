@@ -133,11 +133,6 @@ const EventCard = ({ event }) => (
 
 const Hero = () => (
   <div className="hero">
-    <div className="hero-aurora" aria-hidden="true">
-      <span className="aurora-blob aurora-blob-1" />
-      <span className="aurora-blob aurora-blob-2" />
-      <span className="aurora-blob aurora-blob-3" />
-    </div>
     <div className="hero-content">
       <div className="logo-container">
         <img src={mtcLogo} alt="MTC Logo" className="logo" />

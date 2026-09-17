@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import mtcLogo from './images/mtc-logo.png';
+import { GrainyGradientBackground } from './components/GrainyGradientBackground';
 
 const NavBar = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
   return (
-    <header className={`site-nav ${scrolled ? 'scrolled' : ''}`}>
+    <header className="site-nav">
       <nav className="main-nav">
         <a href="#top" className="nav-brand">
           <img src={mtcLogo} alt="MTC" className="nav-logo" />
@@ -34,6 +27,9 @@ function App() {
   return (
     <Router>
       <div className="app" id="top">
+        <div className="site-background" aria-hidden="true">
+          <GrainyGradientBackground className="site-background-canvas" />
+        </div>
         <NavBar />
 
         <main className="main-content">
